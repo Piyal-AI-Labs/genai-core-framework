@@ -1,5 +1,6 @@
 from bert_score import score
 from ..base import BaseMetric
+
 import warnings
 from transformers import logging
 

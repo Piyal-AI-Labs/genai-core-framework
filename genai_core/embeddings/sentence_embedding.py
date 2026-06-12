@@ -1,6 +1,5 @@
-from sentence_transformers import (
-    SentenceTransformer
-)
+from sentence_transformers import SentenceTransformer
+
 from .base import BaseEmbedding 
 
 class SentenceEmbedding(BaseEmbedding):
