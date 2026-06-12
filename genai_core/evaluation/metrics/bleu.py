@@ -2,6 +2,9 @@ from nltk.translate.bleu_score import (
     sentence_bleu
 )
 from ..base import BaseMetric
+import warnings
+
+warnings.filterwarnings('ignore')
 
 class BleuMetric(BaseMetric):
 
