@@ -54,6 +54,13 @@ class ExperimentTracker:
         
         self.result.metadata[key] = value
 
+    def log_metadatas(
+        self,
+        metadatas: dict
+    ):
+        for key, value in metadatas.items():
+            self.log_metadata(key, value)
+
     def save(self):
 
         self.storage.save(
