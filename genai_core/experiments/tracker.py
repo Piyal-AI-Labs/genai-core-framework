@@ -24,6 +24,13 @@ class ExperimentTracker:
         
         self.result.parameters[key] = value
     
+    def log_params(
+        self,
+        params: dict
+    ):
+        for key, value in params.items():
+            self.log_param(key, value)
+
     def log_metric(
         self,
         key,
@@ -31,6 +38,13 @@ class ExperimentTracker:
     ):
         
         self.result.metrics[key] = value
+
+    def log_metrics(
+        self,
+        metrics: dict
+    ):
+        for key, value in metrics.items():
+            self.log_metric(key, value)
 
     def log_metadata(
         self,
