@@ -10,7 +10,7 @@ class ExperimentTracker:
     ):
         
         self.result = ExperimentResult(
-            experiment_id=str(uuid.uuid4),
+            experiment_id=str(uuid.uuid4()),
             experiment_name=experiment_name
         )
 
